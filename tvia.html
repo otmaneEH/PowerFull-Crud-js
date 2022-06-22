@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calcul mensualité crédit (taux fixe)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap scripts -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="calculator">
+    <div class="container">
+        <div class="row">
+
+        <div class="header">
+            <h1> crud data</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+
+        <div class="row">
+        <div class="inputs">
+            <input onkeyup="getTotal()" type="text" id="title" placeholder="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="Price">
+                <input onkeyup="getTotal()" type="number" id="taxces" placeholder="taxces">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="dicount" placeholder="dicount">
+                <small id="total">1323</small>
+            </div>
+            <input  onkeyup="getTotal()" type="text" placeholder="count" id="count">
+            <input type="text" placeholder="category" id="category">
+            <button id="submit">Creat</button>
+        </div></div>
+
+        <div class="row">
+        <div class="outputs">
+            <div class="searchBlock">
+                <input type="text" id="search" placeholder="search">
+                <div class="btnSearch">
+                    <button id="searchTitle">Search By Title</button>
+                    <button id="searchcatigory">Search By category</button>
+                </div>
+            </div>
+        </div></div>
+        <div class="row">
+        <table class="table col-12 text-white  " id="table">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+</div>
+    </div>
+</div>
+
+    <script src="static/js/custom.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
